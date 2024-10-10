@@ -1,0 +1,12 @@
+.each-navlink-btn{
+    margin-right: 50px;
+}
+.each-navlink-btn button{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Roboto';
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

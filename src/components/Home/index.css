@@ -1,0 +1,115 @@
+ .home-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .filter-toggle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-toggle-btn {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  
+  #products-and-filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .filters-container {
+    flex: 1 1 300px;
+    max-width: 300px;
+    transition: all 0.5s ease;
+  }
+  
+  .slide-in {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .all-products-container {
+    flex: 3 1 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .product-list-item {
+    width: calc(33.333% - 20px);
+    /* width: 200px; */
+    list-style: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-list-item:hover {
+    transform: scale(1.05);
+  }
+   
+.total-products-and-filter-btn{
+    display: flex;
+    justify-content: space-around;
+}
+   
+  @media (max-width: 1024px) {
+    .product-list-item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 426px) {
+    #products-and-filters-container {
+      flex-direction: column;
+    }
+  
+    .product-list-item {
+      width: 100%;
+    }
+  
+    .filters-container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+
+  /* sort recommendations */
+
+.custom-select{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+@media screen and (max-width:426px){
+    .total-products{
+        display: none;
+    }
+}

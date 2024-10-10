@@ -1,0 +1,166 @@
+
+.header-main-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .company-logo {
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .logo-heading {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Roboto';
+  }
+  
+  .navbar-icons-container {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  .each-navbar-icon-cont {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .each-navbar-select-cont select {
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-size: 18px;
+  }
+  
+  .header-nav-links-main-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header-navlinks-ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  hr {
+    margin-top: 3px;
+  }
+  
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.5s ease;
+    padding-top: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .sidebar-navlinks-ul {
+    list-style-type: none;
+    padding-left: 10px;
+  }
+  
+  
+  .menu-btn {
+    display: none;
+  }
+  
+  .close-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 426px) {
+    .small-screen-dont-show {
+      display: none;
+    }
+    
+    .menu-btn {
+      background: transparent;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      display: block;
+    }
+  
+    .logo-heading {
+      font-size: 20px;
+    }
+  }
+  
+
+
+  
+.language-select {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-right: 15px;
+  }
+  
+  .language-select:hover {
+    border-color: #888;
+  }
+  
+  .language-select:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .language-select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  
+  @media screen and (max-width: 426px) {
+    .language-select {
+      width: 100px;
+      font-size: 14px;
+    }
+  }
+  
